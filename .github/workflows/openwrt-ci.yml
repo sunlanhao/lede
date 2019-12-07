@@ -62,6 +62,7 @@ jobs:
           cd openwrt-packages
           git clone https://github.com/sunlanhao/luci-app-adguardhome.git
           git clone https://github.com/Ameykyl/luci-app-ssr-plus-jo.git
+          git clone https://github.com/sunlanhao/luci-app-serverchan.git
           
        
 
@@ -169,6 +170,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
           CONFIG_PACKAGE_luci-app-adguardhome=y
+          CONFIG_PACKAGE_luci-app-serverchan=y          
           CONFIG_PACKAGE_luci-app-ttyd=y
           CONFIG_PACKAGE_luci-app-v2ray-server=y
           # CONFIG_PACKAGE_luci-app-verysync=y
