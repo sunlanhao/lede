@@ -159,6 +159,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
+          CONFIG_PACKAGE_luci-app-adguardhome=y
           CONFIG_PACKAGE_luci-app-ttyd=y
           CONFIG_PACKAGE_luci-app-v2ray-server=y
           # CONFIG_PACKAGE_luci-app-verysync=y
@@ -189,6 +190,11 @@ jobs:
           # # CONFIG_TARGET_IMAGES_PAD is not set
           # # CONFIG_VMDK_IMAGES is not set
           # EOF
+          # 设置固件大小:
+          cat >> .config <<EOF
+          CONFIG_TARGET_KERNEL_PARTSIZE=30
+          CONFIG_TARGET_ROOTFS_PARTSIZE=4000
+          EOF
 
           # 
           # ========================固件定制部分结束========================
