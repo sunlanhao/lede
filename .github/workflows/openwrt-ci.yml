@@ -64,6 +64,8 @@ jobs:
           git clone https://github.com/sunlanhao/luci-app-serverchan.git
           git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git
           git clone https://github.com/rosywrt/luci-theme-rosy
+          git clone https://github.com/sunlanhao/luci-app-ssr-plus-jo.git
+          git clone https://github.com/Ameykyl/my
           
           
        
@@ -166,11 +168,11 @@ jobs:
           # CONFIG_PACKAGE_luci-app-openvpn=y
           # CONFIG_PACKAGE_luci-app-openvpn-server=y
           # CONFIG_PACKAGE_luci-app-qbittorrent=y
-          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
-          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
-          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server=y
-          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
-          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
+          CONFIG_PACKAGE_luci-app-ssr-plus-jo_INCLUDE_Kcptun=y
+          CONFIG_PACKAGE_luci-app-ssr-plus-jo_INCLUDE_Shadowsocks=y
+          CONFIG_PACKAGE_luci-app-ssr-plus-jo_INCLUDE_ShadowsocksR_Server=y
+          CONFIG_PACKAGE_luci-app-ssr-plus-jo_INCLUDE_ShadowsocksR_Socks=y
+          CONFIG_PACKAGE_luci-app-ssr-plus-jo_INCLUDE_V2ray=y
           CONFIG_PACKAGE_luci-app-adguardhome=y
           CONFIG_PACKAGE_luci-app-serverchan=y          
           CONFIG_PACKAGE_luci-app-ttyd=y
