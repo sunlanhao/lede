@@ -64,8 +64,8 @@ jobs:
           git clone https://github.com/KFERMercer/luci-app-serverchan
           git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git
           git clone https://github.com/rosywrt/luci-theme-rosy
-          # git clone https://github.com/sunlanhao/luci-app-ssr-plus-jo.git
-          # git clone https://github.com/Ameykyl/my
+          git clone https://github.com/sunlanhao/luci-app-ssr-plus-jo.git
+          git clone https://github.com/Ameykyl/my
           
           
        
@@ -168,6 +168,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-openvpn=y
           # CONFIG_PACKAGE_luci-app-openvpn-server=y
           # CONFIG_PACKAGE_luci-app-qbittorrent=y
+          CONFIG_PACKAGE_luci-app-ssr-plus-jo=y
           CONFIG_PACKAGE_luci-app-ssr-plus-jo_INCLUDE_Kcptun=y
           CONFIG_PACKAGE_luci-app-ssr-plus-jo_INCLUDE_Shadowsocks=y
           CONFIG_PACKAGE_luci-app-ssr-plus-jo_INCLUDE_ShadowsocksR_Server=y
@@ -203,11 +204,11 @@ jobs:
           EOF
 
           # 取消编译VMware镜像以及镜像填充 (不要删除被缩进的注释符号):
-          # cat >> .config <<EOF
-          # # CONFIG_PACKAGE_luci-app-ssr-plus is not set
+          cat >> .config <<EOF
+          # CONFIG_PACKAGE_luci-app-ssr-plus is not set
           # # CONFIG_TARGET_IMAGES_PAD is not set
           # # CONFIG_VMDK_IMAGES is not set
-          # EOF
+          EOF
         
 
           # 
